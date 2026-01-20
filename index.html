@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
-    <title>TechWave</title>
+    <link rel="stylesheet" href="tailwind.init.css">
+    <title>Tech Wave</title>
 </head>
-<body class="inter-font">
-    <header class="section-width">
-        <nav class="navbar">
-            <h2 class="heading2">Tech<span class="wave">Wave</span></h2>
-            <ul class="menu">
-                <li><a class="text" href="#">About</a></li>
-                <li><a class="text" href="#">Episodes</a></li>
-                <li><a class="text" href="#">Host</a></li>
+<body class="font-inter">
+    <header class="max-w-[1600px] border-2 border-amber-600 bg-[#1A0B2E] mx-auto my-0 text-amber-50">
+        <nav class="flex justify-around p-5 items-center">
+            <h1 class="text-4xl font-extrabold lg:text-5xl">Tech<span class="bg-linear-[29deg,#F7E93F,#fb09b4,#9100F8] bg-clip-text text-transparent">Wave</span></h1>
+            <ul class="hidden items-center gap-5 md:flex lg:gap-10">
+                <li><a class="text-lg font-normal" href="#">About</a></li>
+                <li><a class="text-lg font-normal" href="#">Episodes</a></li>
+                <li><a class="text-lg font-normal" href="#">Host</a></li>
             </ul>
-            <button id="btn" class="primary-btn inter-font" type="button">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-            <span class="hamburger-menu"><i class="fa-solid fa-bars"></i></span>
+            <button class="hidden text-sm font-bold rounded-[1000px] bg-linear-[47.64deg,#F7E93F,#fb09b4,#9100F8] bg-clip-border p-2.5 md:block lg:p-3 lg:text-lg">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            <span class="md:hidden"><img class="h-5 w-6" src="./assets/hamburger-menu.png"></span>
         </nav>
     </header>
 </body>
