@@ -9,8 +9,8 @@
     <title>Tech Wave</title>
 </head>
 <body class="font-inter">
-    <header class="max-w-[1600px] border-2 border-amber-600 bg-[#1A0B2E] mx-auto my-0 text-amber-50">
-        <nav class="flex justify-around p-5 items-center">
+    <header class="max-w-[1600px] mx-auto my-0 text-amber-50">
+        <nav class="flex justify-between md:justify-around p-5 items-center bg-[#1A0B2E]">
             <h1 class="text-4xl font-extrabold lg:text-5xl">Tech<span class="bg-linear-[29deg,#F7E93F,#fb09b4,#9100F8] bg-clip-text text-transparent">Wave</span></h1>
             <ul class="hidden items-center gap-5 md:flex lg:gap-10">
                 <li><a class="text-lg font-normal" href="#">About</a></li>
@@ -20,6 +20,24 @@
             <button class="hidden text-sm font-bold rounded-[1000px] bg-linear-[47.64deg,#F7E93F,#fb09b4,#9100F8] bg-clip-border p-2.5 md:block lg:p-3 lg:text-lg">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
             <span class="md:hidden"><img class="h-5 w-6" src="./assets/hamburger-menu.png"></span>
         </nav>
+        <section class="w-full bg-[url(./assets/hero-bg.png)] bg-cover bg-top bg-no-repeat py-[40px] md:py-[101px]">
+            <div class="my-0 mx-auto flex flex-col items-center gap-2 md:gap-6">
+                <div class="w-[220px] relative md:w-[300px]" >
+                    <img src="./assets/hero-circle.png" alt="gradient circle">
+                    <img class="absolute w-[60px] top-[50%] left-[50%] md:w-[100px] transform translate-x-[-50%] translate-y-[-50%]" src="./assets/microphone.png" alt="microphon">
+                    <span class="bg-green-400 text-black p-2 rounded-2xl shadow-[0px_2px_20px_rgba(0,255,0,0.60)] absolute top-[-5px] right-0 md:top-0 right-[25px]">NEW</span>
+                </div>
+                <div class="text-center">
+                    <h1 class="font-extrabold mb-3 text-4xl md:text-5xl">TechWave</h1>
+                    <p class="text-sm my-2 md:text-lg">Your daily dose of tech insights,productivity hacks, and person</p>
+                    <div class="md:flex md:justify-center mt-3">
+                        <button class="text-sm font-bold rounded-[1000px] bg-linear-[47.64deg,#F7E93F,#fb09b4,#9100F8] bg-clip-border p-2.5 md:block lg:p-3 lg:text-lg"><i class="fa-brands fa-spotify"></i>
+                            Listen On Spotify</button>
+                        <button class="text-sm ml-2 text-green-400 border-2 font-bold rounded-[1000px] bg-clip-border p-2.5 md:block lg:p-3 lg:text-lg"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 </html>
